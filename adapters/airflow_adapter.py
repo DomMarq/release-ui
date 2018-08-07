@@ -240,12 +240,12 @@ class AirflowAdapter(Adapter):
     branches = set()
     types = set()
     self._overall_status = {State.UNUSED_STATUS:0,
-    State.ABANDONED:0,
-    State.FINISHED:0,
-    State.PENDING:0,
-    State.RUNNING:0,
-    State.FAILED:0,
-    'total': 0}
+                            State.ABANDONED:0,
+                            State.FINISHED:0,
+                            State.PENDING:0,
+                            State.RUNNING:0,
+                            State.FAILED:0,
+                            'total': 0}
 
     for release in releases:
       branches.add(releases[release].branch)
